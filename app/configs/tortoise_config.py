@@ -5,7 +5,7 @@ from tortoise.contrib.fastapi import register_tortoise
 from app.configs import config
 
 TORTOISE_APP_MODELS = [
-    # "app.tortoise_models.meeting",
+    "app.tortoise_models.meeting",
     "aerich.models",
 ]
 
@@ -27,6 +27,7 @@ TORTOISE_ORM = {
     "apps": {
         "models": {
             "models": TORTOISE_APP_MODELS,
+            "default_connection": "default",
         },
     },
     "timezone": "Asia/Seoul",
