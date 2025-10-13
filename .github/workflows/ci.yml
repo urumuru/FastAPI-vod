@@ -62,7 +62,7 @@ jobs:
       MYSQL_HOST: 127.0.0.1
       MYSQL_PORT: 3306
       MYSQL_USER: root
-      MYSQL_PASSWORD: ***********
+      MYSQL_PASSWORD: ekfqlc0519!
       MYSQL_DATABASE: when2meet_vod
     steps:
       - name: Check out the codes

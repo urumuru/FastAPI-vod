@@ -4,7 +4,7 @@ poetry run ruff check --select I --fix
 if(!$?) { throw }
 poetry run ruff check --fix
 if(!$?) { throw }
-poetry run mypy .
+poetry run dmypy run -- .
 if(!$?) { throw }
 poetry run coverage run -m pytest .
 if(!$?) { throw }
